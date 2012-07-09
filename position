@@ -1,0 +1,6 @@
+
+# Reposition the current window to (x, y) (offset from top-left corner)
+osascript <<END 
+    # TODO: Grab the bounds of the actual window and center it properly
+    tell application "Terminal" to set the position of window 1 to {$1 - 160, $2 - 100}
+END
