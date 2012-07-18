@@ -1,0 +1,12 @@
+# Spawn a new terminal window and run the command $1
+# $ spawn ls
+if [[ -n "$1" ]]
+then
+osascript <<END 
+    tell app "Terminal" to do script "center && cd $(pwd) && $1" 
+END
+else
+osascript <<END 
+    tell app "Terminal" to do script "center && cd $(pwd)" 
+END
+fi
