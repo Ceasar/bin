@@ -2,5 +2,13 @@
 # Reposition the current window to (x, y) (offset from top-left corner)
 osascript <<END 
     # TODO: Grab the bounds of the actual window and center it properly
-    tell application "Terminal" to set the position of window 1 to {$1 - 160, $2 - 100}
+    # Position is left, top, right, bottom
+    set x to bounds of window 1 of application "iTerm"
+    set dx to item 3 of x - item 1 of x
+    set dy to item 4 of x - item 2 of x
+    set l to $1 - (dx / 2)
+    set top to $2 - (dy / 2)
+    set r to l + dx
+    set bottom to top + dy
+    tell application "iTerm" to set bounds of window 1 to {l, top, r, bottom}
 END
