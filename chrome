@@ -1,0 +1,7 @@
+# Use Chrome to open a website
+if [[ -n "$1" ]]
+then
+     /usr/bin/open -a "/Applications/Google Chrome.app" "http://$1"
+else
+    echo "usage: chrome [sitename]"
+fi
