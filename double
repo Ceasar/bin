@@ -1,0 +1,19 @@
+
+# Reposition the current window to (x, y) (offset from top-left corner)
+osascript <<END 
+    # TODO: Grab the bounds of the actual window and center it properly
+    # Position is left, top, right, bottom
+    set x to bounds of window 1 of application "iTerm"
+    set start_left to item 1 of x
+    set start_top to item 2 of x
+    set start_right to item 1 of x
+    set start_bot to item 4 of x
+    set dx to item 3 of x - item 1 of x
+    set dy to item 4 of x - item 2 of x
+    # cant use 'left' or 'right' names for unknown reason
+    set l to item 1 of x - dx
+    set top to item 2 of x
+    set r to item 3 of x
+    set bottom to top + dy
+    tell application "iTerm" to set bounds of window 1 to {l, top, r, bottom}
+END
