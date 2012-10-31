@@ -1,0 +1,8 @@
+# Replace word $1 with word $2 recursively in $3
+# $ replace foo bar templates/
+if [[ -n "$1" && -n "$2" && -n "$3" ]]
+then
+    perl -e "s/$1/$2/g;" -pi $(find $3 -type f)
+else
+    echo "usage: replace [to_replace] [replacement] [directory]"
+fi
