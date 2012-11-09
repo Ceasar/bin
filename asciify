@@ -1,0 +1,35 @@
+#!/usr/bin/env python
+"""
+Script to turn a unicode file into ascii.
+
+usage: ascii <encoding> [<filename>]
+"""
+import sys
+import unicodedata
+
+
+def main(argv):
+    if len(argv) == 1:
+        print "usage: ascii <encoding> [<filename>]"
+        return
+    elif len(argv) < 3:
+        encoding = "UTF-8"
+        filenames = [argv[1]]
+    else:
+        # Unicode can be encoded in several ways.
+        # Most commonly, it should be UTF-8 or UTF-16
+        encoding = argv[1]
+        filenames = argv[2:]
+
+    for filename in filenames:
+        with open(filename) as f:
+            text = f.read().decode(encoding)
+            uni = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore')
+            print uni
+
+
+if __name__ == "__main__":
+    if '-h' in sys.argv or '--help' in sys.argv:
+        print "usage: ascii <encoding> [<filename>]"
+    else:
+        main(sys.argv)
