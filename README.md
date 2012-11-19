@@ -33,9 +33,17 @@ Find $1 in $2 recursively, with context, and with line numbers
 
 # get_height
 
-Get the height of the screen.
+Get the height of the window.
 
 # get_width
+
+Get the width of the window.
+
+# get_screen_height
+
+Get the width of the height.
+
+# get_screen_width
 
 Get the width of the screen.
 
