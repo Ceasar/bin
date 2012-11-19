@@ -27,6 +27,14 @@ Double the width of the terminal.
 
 Connect to eniac.
 
+# get_height
+
+Get the height of the screen.
+
+# get_width
+
+Get the width of the screen.
+
 # half
 
 Reduce the width of the terminal by half.
