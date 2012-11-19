@@ -31,6 +31,10 @@ Connect to eniac.
 
 Find $1 in $2 recursively, with context, and with line numbers
 
+# full
+
+Make the terminal take up the whole screen.
+
 # get_height
 
 Get the height of the window.
@@ -59,6 +63,10 @@ Reduce the width of the terminal by half.
 
 Create a generic html file.
 
+# left
+
+Make the terminal take up the left half of the screen.
+
 # MouseTools
 
 Utility for performing tasks with the mouse. See [here](http://www.hamsoftengineering.com/codeSharing/MouseTools/MouseTools.html).
@@ -70,6 +78,10 @@ Stop/start Spotify.
 # position [x] [y]
 
 Center the terminal at (x, y).
+
+# right
+
+Make the terminal take up the right half of the screen.
 
 # replace [keyword] [newKeyWord] [directory]
 
