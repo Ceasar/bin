@@ -1,0 +1,5 @@
+
+# Reposition the current window to (x, y) (offset from top-left corner)
+osascript <<END 
+    tell application "iTerm" to set bounds of window 1 to {$1, $2, $1 + $3, $2 + $4}
+END

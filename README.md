@@ -59,6 +59,10 @@ Center the terminal at (x, y).
 
 Replace a keyword with another in a directory.
 
+# resize [x] [y] [width] [height]
+
+Reposition and resize the terminal .
+
 # spawn [command]
 
 Spawn a new terminal and run a command.
