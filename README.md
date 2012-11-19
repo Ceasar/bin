@@ -27,6 +27,10 @@ Double the width of the terminal.
 
 Connect to eniac.
 
+# f [keyword] [directory]
+
+Find $1 in $2 recursively, with context, and with line numbers
+
 # get_height
 
 Get the height of the screen.
@@ -35,17 +39,21 @@ Get the height of the screen.
 
 Get the width of the screen.
 
+# growl [message]
+
+Make a message appear on growl.
+
 # half
 
 Reduce the width of the terminal by half.
 
-# f [keyword] [directory]
+# html
 
-Find $1 in $2 recursively, with context, and with line numbers
+Create a generic html file.
 
-# growl [message]
+# MouseTools
 
-Make a message appear on growl.
+Utility for performing tasks with the mouse. See [here](http://www.hamsoftengineering.com/codeSharing/MouseTools/MouseTools.html).
 
 # pause
 
