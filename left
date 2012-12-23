@@ -1,1 +1,0 @@
-resize 0 0 $(expr $(get_screen_width) / 2) $(get_screen_height) &

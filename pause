@@ -1,5 +1,0 @@
-#!/bin/sh
-
-osascript <<END 
-    tell application "Spotify" to playpause
-END

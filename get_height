@@ -1,9 +1,0 @@
-
-# Reposition the current window to (x, y) (offset from top-left corner)
-osascript <<END 
-    # TODO: Grab the bounds of the actual window and center it properly
-    # Position is left, top, right, bottom
-    set x to bounds of window 1 of application "iTerm"
-    set dy to item 4 of x - item 2 of x
-    get dy
-END
