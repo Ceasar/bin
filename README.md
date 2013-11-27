@@ -23,9 +23,9 @@ Find $1 in $2 recursively, with context, and with line numbers
 
 Create a generic html file.
 
-# quiet
+# quietly
 
-Run a command in the background and suppress output.
+Run a command, but suppress output.
 
 # replace [keyword] [newKeyWord] [directory]
 
