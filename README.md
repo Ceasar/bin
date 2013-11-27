@@ -23,6 +23,10 @@ Find $1 in $2 recursively, with context, and with line numbers
 
 Create a generic html file.
 
+# quiet
+
+Run a command in the background and suppress output.
+
 # replace [keyword] [newKeyWord] [directory]
 
 Replace a keyword with another in a directory.
