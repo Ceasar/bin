@@ -1,5 +1,9 @@
 # Replace word $1 with word $2 recursively in $3
 # $ replace foo bar templates/
+#
+# This may fail with "bin/perl: Argument list too long" if the number of files
+# found by `find` is too large. Make $3 more specific and run the script
+# multiple times to get around this.
 if [[ -n "$1" && -n "$2" && -n "$3" ]]
 then
     perl -e "s/$1/$2/g;" -pi $(find $3 -type f)
